@@ -1,0 +1,156 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "name": "Untitled3.ipynb",
+      "provenance": [],
+      "authorship_tag": "ABX9TyPtazQx6eBdzFa8o2URg2nc",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/Akanksha1294/Akanksha/blob/master/Day%203%20assignment\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "q8pX1OMTVFxM",
+        "colab_type": "text"
+      },
+      "source": [
+        "Question 1 - Find sum Of N numbers using while loops"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "LizUkoBEV7vE",
+        "colab_type": "code",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 204
+        },
+        "outputId": "caa1a10c-4911-443e-c0f1-f3b56ad87272"
+      },
+      "source": [
+        "n=10\n",
+        "sum=0\n",
+        "while(n>=0):\n",
+        "  sum=sum+n\n",
+        "  n-=1\n",
+        "  print (\"n--->\" ,sum)"
+      ],
+      "execution_count": 4,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "n---> 10\n",
+            "n---> 19\n",
+            "n---> 27\n",
+            "n---> 34\n",
+            "n---> 40\n",
+            "n---> 45\n",
+            "n---> 49\n",
+            "n---> 52\n",
+            "n---> 54\n",
+            "n---> 55\n",
+            "n---> 55\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "nC5qSY5_WtXT",
+        "colab_type": "text"
+      },
+      "source": [
+        "Take an integer and find if its prime or not\n"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "R1lMPSzkWxSb",
+        "colab_type": "code",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 51
+        },
+        "outputId": "3f4a51ed-4ff9-48ca-b33f-ea8cd5796b07"
+      },
+      "source": [
+        "num=43\n",
+        "num=int(input(\"enter a number\"))\n",
+        "if num>1:\n",
+        "  for i in range(2,sum):\n",
+        "    if(num%i)==0:\n",
+        "      print(num, \"is not a prime number\")\n",
+        "      break\n",
+        "  else:\n",
+        "        print(num, \"is a prime number\")"
+      ],
+      "execution_count": 7,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "enter a number53\n",
+            "53 is not a prime number\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "G7jkeZ4gXZ4W",
+        "colab_type": "code",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 51
+        },
+        "outputId": "d7083488-a73b-4937-ef98-a842b87ad0cb"
+      },
+      "source": [
+        "num=3\n",
+        "num=int(input(\"enter a number\"))\n",
+        "if num>1:\n",
+        "  for i in range(2,num):\n",
+        "    if(num%i)==0:\n",
+        "      prnt(num, \"is not a prime number\")\n",
+        "      break\n",
+        "    else:\n",
+        "      print(num, \"is a prime number\")"
+      ],
+      "execution_count": 8,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "enter a number3\n",
+            "3 is a prime number\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    }
+  ]
+}
